@@ -21,7 +21,37 @@ They must have the same name of the related images you will put in the assets.
 
 When you ovverride the *ViewDidLoad()* ,please initialize the buttons/answers first, and then call the *askQuestion()* function, as displayed in this example:
 
-![example](/example.png)
+    import UIKit
+    import IMGQuizBuilder
+
+    class ViewController: QuizViewController {
+
+    @IBOutlet var img: UIImageView!
+    
+    @IBOutlet var b1: UIButton!
+    @IBOutlet var b2: UIButton!
+    @IBOutlet var b3: UIButton!
+    
+    override func viewDidLoad() {
+        //super.viewDidLoad()
+        quizElements = ["cookie","cake","sugar","salt","bread"]
+        quizTitle = "Food Quiz"
+        quizImage = img
+        answer1 = b1
+        answer2 = b2
+        answer3 = b3
+        askQuestion()
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func getTheResult(_ sender: UIButton) {
+        answerSelection(sender: sender)
+    }
+    
+
+    }
 
 
 
