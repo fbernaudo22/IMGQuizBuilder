@@ -1,5 +1,7 @@
 # IMGQuizBuilder
 
+[![Github All Releases](https://img.shields.io/github/downloads/fbernaudo22/IMGQuizBuilder/total.svg)]()
+
 IMGQuizBuilder is a package wich contains a custom UIViewController built to 
 create a simple Image quiz game with your own questions.
 
