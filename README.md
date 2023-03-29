@@ -21,6 +21,8 @@ They must have the same name of the related images you will put in the assets.
 
 When you ovverride the *ViewDidLoad()* ,please initialize the buttons/answers first, and then call the *askQuestion()* function, as displayed in this example:
 
+![Example](/)
+
 
 
 
